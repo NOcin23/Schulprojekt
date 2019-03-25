@@ -1,0 +1,30 @@
+.example-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+img{
+  margin-top: 30%;
+}
+
+button{
+  margin-left: 5%;
+}
+
+mat-toolbar{
+  background-color: #eeeeee;
+}
+
+.login{
+  background: transparent;
+  margin-left: 40%;
+  border-color: transparent;
+}
+
+mat-drawer-container{
+  background-color: #eeeeee;
+  margin-left: 10%;
+  margin-right: 10%;
+}

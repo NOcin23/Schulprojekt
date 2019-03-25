@@ -1,0 +1,49 @@
+<mat-grid-list  cols="2" rowHeight="7:6">
+  <div class="inhalt">
+  <mat-grid-tile>
+      <mat-grid-list cols="12">
+        <mat-list>
+          <h1>
+            Anmelden
+          </h1>
+        </mat-list>
+        <mat-list>
+          <input placeholder="E-Mail">
+        </mat-list>
+        <mat-list>
+          <input placeholder="Passwort">
+        </mat-list>
+        <button class="mäh" mat-flat-button color="primary">Anmelden</button>
+      </mat-grid-list>
+  </mat-grid-tile>
+  </div>
+  <mat-grid-tile>
+    <mat-grid-list cols="12">
+      <mat-list>
+        <h1>
+          Registrieren
+        </h1>
+        <mat-list>
+          <input [(ngModel)]="vorname"  placeholder="Vorname">
+          <input [(ngModel)]="nachname"  placeholder="Nachname">
+        </mat-list>
+        <mat-list>
+          <input [(ngModel)]="strasse"  placeholder="Straße">
+        </mat-list>
+        <mat-list>
+          <input [(ngModel)]="plz"  type="number" placeholder="PLZ">
+          <input [(ngModel)]="ort"  placeholder="Ort">
+        </mat-list>
+        <mat-list>
+
+          <input matInput [(ngModel)]="email" placeholder="Email">
+
+        </mat-list>
+        <mat-list>
+          <input matInput [(ngModel)]="password" placeholder="Passwort wählen">
+        </mat-list>
+        <button class="mäh" (click)="onClick($event)" mat-flat-button color="primary">Registrieren</button>
+      </mat-list>
+    </mat-grid-list>
+  </mat-grid-tile>
+</mat-grid-list>

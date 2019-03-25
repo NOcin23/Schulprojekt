@@ -1,0 +1,16 @@
+mat-grid-list{
+  display: flow;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #212121;
+  padding-bottom: 20rem;
+  margin-left: -1rem;
+  margin-right: -0.5rem;
+}
+
+mat-grid-tile {
+  text-align: center;
+  background-color: orangered;
+}
+
+
