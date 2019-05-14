@@ -238,6 +238,17 @@ export class FooterComponent implements OnInit {
 
     <div class="tab-pane fade " id="c-templateData">
         <pre class="line-numbers"><code class="language-html">&lt;mat-toolbar class&#x3D;&quot;example-footer&quot;&gt;
+
+&lt;ul&gt;
+  &lt;a routerLink&#x3D;&quot;/impressum&quot;&gt;
+    Impressum
+  &lt;/a&gt;
+&lt;/ul&gt;
+  &lt;u&gt;
+    &lt;a routerLink&#x3D;&quot;/datenschutz&quot;&gt;
+      Datenschutzerklärung
+    &lt;/a&gt;
+  &lt;/u&gt;
 &lt;/mat-toolbar&gt;
 </code></pre>
     </div>
@@ -252,6 +263,14 @@ export class FooterComponent implements OnInit {
   left: 0;
   right: 0;
   background-color: #eeeeee;
+}
+
+ul{
+  padding-right: 5rem;
+}
+
+a{
+  font-size: 0.9rem ;
 }
 </code></pre>
     </div>
@@ -281,8 +300,8 @@ export class FooterComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><mat-toolbar class="example-footer"></mat-toolbar></div>'
-    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BestellenComponent', 'selector': 'app-bestellen'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ImpressumComponent', 'selector': 'app-impressum'},{'name': 'KontaktComponent', 'selector': 'app-kontakt'},{'name': 'LageComponent', 'selector': 'app-lage'},{'name': 'LeistungComponent', 'selector': 'app-leistung'},{'name': 'LoginRegistrierenComponent', 'selector': 'app-login-registrieren'},{'name': 'ShopComponent', 'selector': 'app-shop'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'}];
+        var COMPONENT_TEMPLATE = '<div><mat-toolbar class="example-footer"><ul>  <a routerLink="/impressum">    Impressum  </a></ul>  <u>    <a routerLink="/datenschutz">      Datenschutzerklärung    </a>  </u></mat-toolbar></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BestellenComponent', 'selector': 'app-bestellen'},{'name': 'DatenschutzComponent', 'selector': 'app-datenschutz'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ImpressumComponent', 'selector': 'app-impressum'},{'name': 'KontaktComponent', 'selector': 'app-kontakt'},{'name': 'LageComponent', 'selector': 'app-lage'},{'name': 'LeistungComponent', 'selector': 'app-leistung'},{'name': 'LoginRegistrierenComponent', 'selector': 'app-login-registrieren'},{'name': 'ShopComponent', 'selector': 'app-shop'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'FooterComponent'};
 </script>

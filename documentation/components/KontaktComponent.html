@@ -228,35 +228,35 @@ export class KontaktComponent {
               Vorname:
             &lt;/mat-list&gt;
             &lt;mat-list&gt;
-              &lt;input type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;Vorname&quot; required&gt;
+              &lt;input type&#x3D;&quot;text&quot;  required&gt;
             &lt;/mat-list&gt;
 
             &lt;mat-list&gt;
               Nachname:
             &lt;/mat-list&gt;
               &lt;mat-list&gt;
-              &lt;input type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;Nachname&quot;&gt;
+              &lt;input type&#x3D;&quot;text&quot; &gt;
             &lt;/mat-list&gt;
 
             &lt;mat-list&gt;
               Straße:
             &lt;/mat-list&gt;
               &lt;mat-list&gt;
-              &lt;input type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;Straße&quot;&gt;
+              &lt;input type&#x3D;&quot;text&quot; &gt;
             &lt;/mat-list&gt;
 
             &lt;mat-list&gt;
               Stadt:
             &lt;/mat-list&gt;
             &lt;mat-list&gt;
-              &lt;input type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;city&quot;&gt;
+              &lt;input type&#x3D;&quot;text&quot; &gt;
             &lt;/mat-list&gt;
 
             &lt;mat-list&gt;
               Ort:
             &lt;/mat-list&gt;
               &lt;mat-list&gt;
-              &lt;input type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;state&quot;&gt;
+              &lt;input type&#x3D;&quot;text&quot; &gt;
             &lt;/mat-list&gt;
           &lt;/mat-list&gt;
         &lt;/mat-grid-list&gt;
@@ -299,6 +299,10 @@ mat-list{
 
 mat-grid-tile{
   background-color: orangered;
+}
+
+.w{
+  color: #cccccc;
 }
 
 .inhalt{
@@ -357,8 +361,8 @@ button {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div class="all"><mat-grid-list cols="2" rowHeight="7:6">  <div class="inhalt">  <mat-grid-tile>        <mat-grid-list cols="1">          <mat-list>            <mat-list>              <h3>Address</h3>            </mat-list>            <mat-list>              Vorname:            </mat-list>            <mat-list>              <input type="text" formControlName="Vorname" required>            </mat-list>            <mat-list>              Nachname:            </mat-list>              <mat-list>              <input type="text" formControlName="Nachname">            </mat-list>            <mat-list>              Straße:            </mat-list>              <mat-list>              <input type="text" formControlName="Straße">            </mat-list>            <mat-list>              Stadt:            </mat-list>            <mat-list>              <input type="text" formControlName="city">            </mat-list>            <mat-list>              Ort:            </mat-list>              <mat-list>              <input type="text" formControlName="state">            </mat-list>          </mat-list>        </mat-grid-list>      </mat-grid-tile>  </div>  <mat-grid-tile class="w">      <mat-grid-list cols="1">        <mat-list>          Ihre Nachricht:        </mat-list>        <mat-list>        <input class="bla" type="text">        </mat-list>        <mat-list>          <button class="mäh" mat-flat-button color="primary">Send</button>        </mat-list>      </mat-grid-list></mat-grid-tile>    </mat-grid-list></div></div>'
-    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BestellenComponent', 'selector': 'app-bestellen'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ImpressumComponent', 'selector': 'app-impressum'},{'name': 'KontaktComponent', 'selector': 'app-kontakt'},{'name': 'LageComponent', 'selector': 'app-lage'},{'name': 'LeistungComponent', 'selector': 'app-leistung'},{'name': 'LoginRegistrierenComponent', 'selector': 'app-login-registrieren'},{'name': 'ShopComponent', 'selector': 'app-shop'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'}];
+        var COMPONENT_TEMPLATE = '<div><div class="all"><mat-grid-list cols="2" rowHeight="7:6">  <div class="inhalt">  <mat-grid-tile>        <mat-grid-list cols="1">          <mat-list>            <mat-list>              <h3>Address</h3>            </mat-list>            <mat-list>              Vorname:            </mat-list>            <mat-list>              <input type="text"  required>            </mat-list>            <mat-list>              Nachname:            </mat-list>              <mat-list>              <input type="text" >            </mat-list>            <mat-list>              Straße:            </mat-list>              <mat-list>              <input type="text" >            </mat-list>            <mat-list>              Stadt:            </mat-list>            <mat-list>              <input type="text" >            </mat-list>            <mat-list>              Ort:            </mat-list>              <mat-list>              <input type="text" >            </mat-list>          </mat-list>        </mat-grid-list>      </mat-grid-tile>  </div>  <mat-grid-tile class="w">      <mat-grid-list cols="1">        <mat-list>          Ihre Nachricht:        </mat-list>        <mat-list>        <input class="bla" type="text">        </mat-list>        <mat-list>          <button class="mäh" mat-flat-button color="primary">Send</button>        </mat-list>      </mat-grid-list></mat-grid-tile>    </mat-grid-list></div></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BestellenComponent', 'selector': 'app-bestellen'},{'name': 'DatenschutzComponent', 'selector': 'app-datenschutz'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ImpressumComponent', 'selector': 'app-impressum'},{'name': 'KontaktComponent', 'selector': 'app-kontakt'},{'name': 'LageComponent', 'selector': 'app-lage'},{'name': 'LeistungComponent', 'selector': 'app-leistung'},{'name': 'LoginRegistrierenComponent', 'selector': 'app-login-registrieren'},{'name': 'ShopComponent', 'selector': 'app-shop'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'KontaktComponent'};
 </script>

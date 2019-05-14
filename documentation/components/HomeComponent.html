@@ -312,11 +312,10 @@ export class HomeComponent implements OnInit {
     <div class="tab-pane fade " id="c-templateData">
         <pre class="line-numbers"><code class="language-html">
 
-&lt;mat-grid-list cols&#x3D;&quot;2&quot; rowHeight&#x3D;&quot;2:1&quot;&gt;
+&lt;mat-grid-list cols&#x3D;&quot;2&quot; &gt;
   &lt;a routerLink&#x3D;&quot;/shop&quot;&gt;
     &lt;mat-grid-tile &gt;&lt;img src&#x3D;&quot;../../assets/shop.svg&quot;&gt;&lt;/mat-grid-tile&gt;
   &lt;/a&gt;
-
   &lt;a routerLink&#x3D;&quot;/about-us&quot;&gt;
     &lt;mat-grid-tile&gt;&lt;img src&#x3D;&quot;../../assets/aboutus.svg&quot;&gt;&lt;/mat-grid-tile&gt;
   &lt;/a&gt;
@@ -330,7 +329,9 @@ export class HomeComponent implements OnInit {
     &lt;mat-grid-tile &gt;&lt;img src&#x3D;&quot;../../assets/location.svg&quot;&gt;&lt;/mat-grid-tile&gt;
   &lt;/a&gt;
  &lt;a routerLink&#x3D;&quot;/leistung&quot;&gt;&lt;mat-grid-tile&gt;&lt;img src&#x3D;&quot;../../assets/docu.svg&quot;&gt;&lt;/mat-grid-tile&gt;&lt;/a&gt;
+
 &lt;/mat-grid-list&gt;
+
 </code></pre>
     </div>
 
@@ -339,7 +340,7 @@ export class HomeComponent implements OnInit {
                     <code>./home.component.scss</code>
                 </p>
                 <pre class="line-numbers"><code class="language-scss">mat-grid-list{
-  display: grid;
+  display: flow;
   flex-direction: row;
   justify-content: center;
   background-color: #212121;
@@ -382,8 +383,8 @@ mat-grid-tile {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><mat-grid-list cols="2" rowHeight="2:1">  <a routerLink="/shop">    <mat-grid-tile ><img src="../../assets/shop.svg"></mat-grid-tile>  </a>  <a routerLink="/about-us">    <mat-grid-tile><img src="../../assets/aboutus.svg"></mat-grid-tile>  </a>  <a routerLink="/kontakt">    <mat-grid-tile><img src="../../assets/contact.svg"></mat-grid-tile>  </a>  <a routerLink="/impressum">    <mat-grid-tile ><img src="../../assets/impressum.svg"></mat-grid-tile>  </a>  <a routerLink="/lage">    <mat-grid-tile ><img src="../../assets/location.svg"></mat-grid-tile>  </a> <a routerLink="/leistung"><mat-grid-tile><img src="../../assets/docu.svg"></mat-grid-tile></a></mat-grid-list></div>'
-    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BestellenComponent', 'selector': 'app-bestellen'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ImpressumComponent', 'selector': 'app-impressum'},{'name': 'KontaktComponent', 'selector': 'app-kontakt'},{'name': 'LageComponent', 'selector': 'app-lage'},{'name': 'LeistungComponent', 'selector': 'app-leistung'},{'name': 'LoginRegistrierenComponent', 'selector': 'app-login-registrieren'},{'name': 'ShopComponent', 'selector': 'app-shop'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'}];
+        var COMPONENT_TEMPLATE = '<div><mat-grid-list cols="2" >  <a routerLink="/shop">    <mat-grid-tile ><img src="../../assets/shop.svg"></mat-grid-tile>  </a>  <a routerLink="/about-us">    <mat-grid-tile><img src="../../assets/aboutus.svg"></mat-grid-tile>  </a>  <a routerLink="/kontakt">    <mat-grid-tile><img src="../../assets/contact.svg"></mat-grid-tile>  </a>  <a routerLink="/impressum">    <mat-grid-tile ><img src="../../assets/impressum.svg"></mat-grid-tile>  </a>  <a routerLink="/lage">    <mat-grid-tile ><img src="../../assets/location.svg"></mat-grid-tile>  </a> <a routerLink="/leistung"><mat-grid-tile><img src="../../assets/docu.svg"></mat-grid-tile></a></mat-grid-list></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BestellenComponent', 'selector': 'app-bestellen'},{'name': 'DatenschutzComponent', 'selector': 'app-datenschutz'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ImpressumComponent', 'selector': 'app-impressum'},{'name': 'KontaktComponent', 'selector': 'app-kontakt'},{'name': 'LageComponent', 'selector': 'app-lage'},{'name': 'LeistungComponent', 'selector': 'app-leistung'},{'name': 'LoginRegistrierenComponent', 'selector': 'app-login-registrieren'},{'name': 'ShopComponent', 'selector': 'app-shop'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'HomeComponent'};
 </script>

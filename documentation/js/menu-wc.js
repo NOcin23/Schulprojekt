@@ -55,13 +55,13 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/AppModule.html" data-type="entity-link">AppModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#components-links-module-AppModule-a5e442b0e2d0b1042f9ab68a67fae48d"' : 'data-target="#xs-components-links-module-AppModule-a5e442b0e2d0b1042f9ab68a67fae48d"' }>
+                                            'data-target="#components-links-module-AppModule-2aac90b4d3beb7407840cae520bf3d00"' : 'data-target="#xs-components-links-module-AppModule-2aac90b4d3beb7407840cae520bf3d00"' }>
                                             <span class="icon ion-md-cog"></span>
                                             <span>Components</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-AppModule-a5e442b0e2d0b1042f9ab68a67fae48d"' :
-                                            'id="xs-components-links-module-AppModule-a5e442b0e2d0b1042f9ab68a67fae48d"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-AppModule-2aac90b4d3beb7407840cae520bf3d00"' :
+                                            'id="xs-components-links-module-AppModule-2aac90b4d3beb7407840cae520bf3d00"' }>
                                             <li class="link">
                                                 <a href="components/AboutUsComponent.html"
                                                     data-type="entity-link" data-context="sub-entity" data-context-id="modules">AboutUsComponent</a>
@@ -73,6 +73,10 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                             <li class="link">
                                                 <a href="components/BestellenComponent.html"
                                                     data-type="entity-link" data-context="sub-entity" data-context-id="modules">BestellenComponent</a>
+                                            </li>
+                                            <li class="link">
+                                                <a href="components/DatenschutzComponent.html"
+                                                    data-type="entity-link" data-context="sub-entity" data-context-id="modules">DatenschutzComponent</a>
                                             </li>
                                             <li class="link">
                                                 <a href="components/FooterComponent.html"
@@ -119,6 +123,19 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                             </li>
                 </ul>
                 </li>
+                        <li class="chapter">
+                            <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ? 'data-target="#injectables-links"' :
+                                'data-target="#xs-injectables-links"' }>
+                                <span class="icon ion-md-arrow-round-down"></span>
+                                <span>Injectables</span>
+                                <span class="icon ion-ios-arrow-down"></span>
+                            </div>
+                            <ul class="links collapse" ${ isNormalMode ? 'id="injectables-links"' : 'id="xs-injectables-links"' }>
+                                <li class="link">
+                                    <a href="injectables/UserserviceService.html" data-type="entity-link">UserserviceService</a>
+                                </li>
+                            </ul>
+                        </li>
                     <li class="chapter">
                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ? 'data-target="#miscellaneous-links"'
                             : 'data-target="#xs-miscellaneous-links"' }>
